@@ -1,4 +1,4 @@
-﻿/* 폰트 로드 */
+﻿﻿/* 폰트 로드 */
 @import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
@@ -79,7 +79,7 @@ html								{	font-family:'cwtexyen', 'Jeju Gothic', serif;
 						 -1px  1px 3px grey,    0 1px 3px grey,
 						  1px  1px 3px grey,  1px   0 3px grey,
 						  1px -1px 3px grey,   0 -1px 3px grey; }
-.chat_nickname_box	{	font-size:0.8em; }
+.chat_nickname_box	{	font-size:1.3em; }
 
 
 .chat_outer_box			{	position:relative; z-index:0; overflow:hidden;
