@@ -4,20 +4,20 @@
  licensed under MIT license
  based on 'xcom' theme which based on 'mario' theme
 */
- @font-face {
-  font-family: 'Godo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Godo'), url('../font/GodoB.ttf');
-}
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 @font-face {
-  font-family: 'Godo';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Godo'), url('../font/GodoB.ttf');
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 300;
+  src: local('서울남산체 L'), url('../_shared/fonts/SeoulNamsanL.otf');
 }
-
+@font-face {
+  font-family: 'SeoulNamsan';
+  font-style: regular;
+  font-weight: 600;
+  src: local('서울남산체 B'), url('../_shared/fonts/SeoulNamsanB.otf');
+}
 
 * {
   box-sizing: border-box;
@@ -27,7 +27,7 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: 'Godo', sans-serif;
+  font-family: 'Lato', 'SeoulNamsan', sans-serif;
 }
 body {
   position: absolute;
@@ -47,18 +47,10 @@ body {
   padding: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.125);
-  text-shadow: 0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,
-    0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,
-    0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,
-    0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,0 0 0.09em #000,
-    0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,
-    0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,
-    0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,
-    0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000,0.09em 0.09em 0.09em #000;
+  text-shadow: 0 0 0.25rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
   position: relative;
   overflow: hidden;
 }
-
 /* Nickname / Badge */
 .chat_upper_box {
   position: relative;
@@ -71,8 +63,8 @@ body {
   display: flex;
   flex-grow: 1;
   padding: 0 0.25rem;
-  font-weight: 700;
-  font-size: 1rem;
+  color: #fff !important;
+  font-weight: 600;
 }
 .chat_badge_box {
   display: flex;
@@ -94,7 +86,7 @@ body {
 .chat_msg_box {
   padding: 0.25rem 0.5rem;
   max-height: 14rem; /* 텍스트 영역 최대 높이 */
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 .chat_msg_box.image_only {
   text-align: center;
@@ -111,7 +103,7 @@ body {
   height: 1.25rem;
 }
 .twitch_emote {
-  height: 4rem;
+  height: 2rem;
 }
 .dccon {
   height: 6.25rem;
@@ -125,7 +117,7 @@ body {
 .chat_subscribe_box,
 .chat_cheer_box	{ /* TODO: fix outgoing twip donations */
   text-align: center;
-  font-weight: 700;
+  font-weight: bold;
   padding: 3rem 0.5rem 1rem 0.5rem;
   margin-top: -2.5rem;
   font-size: 1rem;
