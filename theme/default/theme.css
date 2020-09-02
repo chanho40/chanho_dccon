@@ -59,6 +59,38 @@ body {
   overflow: hidden;
 }
 
+/* ===== 이모트 축약 ===== */
+.chat_msg_box.image_only img.twitch_emote:nth-child(9) {
+	border-radius: 5px;
+	width: 15px;
+	height: 15px;
+	filter: contrast(0) brightness(1.91);
+	margin-left: 2px;
+	background: #000;
+	clip-path: polygon(45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%,
+					55% 100%, 45% 100%, 45% 55%, 0% 55%, 0% 45%, 45% 45%);
+}
+.chat_msg_box.image_only img.twitch_emote:nth-child(n + 10) {
+	display: none;
+}
+
+/* 디시콘 축약 */
+.chat_msg_box.image_only img.dccon:nth-child(7) {
+	border-radius: 5px;
+	width: 15px;
+	height: 15px;
+	filter: contrast(0) brightness(1.91);
+	margin-left: 2px;
+	background: #000;
+	clip-path: polygon(45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%,
+					55% 100%, 45% 100%, 45% 55%, 0% 55%, 0% 45%, 45% 45%);
+}
+
+.chat_msg_box.image_only img.dccon:nth-child(n + 8) {
+	display: none;
+}
+
+
 /* Nickname / Badge */
 .chat_upper_box {
   position: relative;
@@ -71,7 +103,7 @@ body {
   order: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-right: 0.25rem;
 }
 .chat_nickname_box {
@@ -102,7 +134,7 @@ body {
 }
 .chat_msg_box {
   padding: 0.25rem 0.5rem;
-  max-height: 14rem; /* 텍스트 영역 최대 높이 */
+  max-height: 15rem; /* 텍스트 영역 최대 높이 */
   font-size: 1.1rem;
 }
 .chat_msg_box.image_only {
