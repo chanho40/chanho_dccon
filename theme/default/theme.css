@@ -43,7 +43,7 @@ body {
   word-wrap: break-word;
 }
 .chat_outer_box {
-  margin: 0.25rem 0;
+  margin: 0.1rem 0;
   padding: 0;
   width: 100%;
   background: rgba(0, 0, 0, 0.125);
@@ -62,7 +62,7 @@ body {
 /* Nickname / Badge */
 .chat_upper_box {
   position: relative;
-  padding: 0.25rem;
+  padding: 0.18rem;
   background: rgba(0, 0, 0, 0.125);
   display: flex;
   z-index: 10;
@@ -82,6 +82,14 @@ body {
   font-size: 1rem;
 }
 .chat_badge_box > img {
+  box-shadow: 0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,
+    0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,
+    0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,
+    0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,0 0 0.025em #000,
+    0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,
+    0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,
+    0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,
+    0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000,0.025em 0.025em 0.025em #000;
   width: 1.375rem;
   height: 1.375rem;
   margin: 0 0 0 0.1rem;f
